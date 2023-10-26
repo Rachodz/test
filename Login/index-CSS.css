@@ -1,0 +1,13 @@
+/*Forme de formulaire*/
+#formu{
+    border:goldenrod 2px solid ;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 2%;
+    text-align:center;
+    }
+
+    #imgbckgrnd{
+        width: 100%
+
+    }
