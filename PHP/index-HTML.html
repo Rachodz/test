@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <script type="text/javascript" src=""></script>    
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div>
+        <h2>LOGIN</h2>
+        <i>Se connecter</i>
+        <div >
+            <form method="post" action="index.php">
+                <div><input type="text" placeholder="name" required name="name"></div> 
+                <div><input type="text" placeholder="firstname" required name="firstname"></div> 
+                <div><input type="text" placeholder="age" required name="age"></div> 
+                <div><input type="email" placeholder="Email" required name="email"></div>            
+                <div><input  type="password" placeholder="Password" required name="password"></div>
+                <div><button type="submit" value="submit">envoyer</button></div>
+            </form>
+        </div>
+    </div>
+
+    <?php
+    if($_SERVER["REQUEST_METHOD"] =="POST"){
+       echo'it is a post request <br>';
+       echo "<strong>".$_POST['name'].'<span>'.$_POST['age']." is years old.</strong>";
+   }else{
+       echo'it is a GEt request';
+       echo "<strong>".$_GET['name'].$_GET['age']." is years old.</strong>";
+   }
+   ?>
+</body>
+
+
+</html>
