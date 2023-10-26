@@ -1,0 +1,14 @@
+body{background-image: url(./img/TEST.png) ; }
+h1{text-align: center; color:blue;}
+/*form{ }*/
+div{
+    margin: 0 auto;
+    width: 200px; 
+    height: 200px; 
+    background-color:#b52c2c;
+    border-radius: 25%;
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center;
+    
+}

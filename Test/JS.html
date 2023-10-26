@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Inclusion du JavaScripte</title>
+<!--lien vers mon fichier CSS-->
+    <link rel="stylesheet" type="text/css" href="./JS.css">
+
+</head>
+
+<body>
+    <h1 id="1">Bienvenue sur ma page...</h1>
+
+    <!--Bouton Background red-->
+    <button onclick="hcolor('red')">Button Rouge</button>
+
+    <!--Bouton Background bleu et changement de h1 -->
+    <button onclick="bgvaleur('')">Button bleu et Changement de titre</button>
+
+    <!--Mon lien changement Background quand souris passe devant et alerte pour accédent au lien-->
+    <input id="2" type="text" value=""></br>
+    <p id="3"><a href="https://getbootstrap.com/" onclick="alert('Go boostrap')"
+            onmouseover="document.getElementById('3').style.backgroundColor='#f6d365'" onmouseleave=""> Bootstrap</a>
+     </p>
+    <!--Carré-->
+    <button onclick="carré">Button carré</button>
+    <input id="4" type="text" value="">
+    <h3 id="rcarré">Résultat carré</h3>
+
+    <!--Tableau moyen et double-->
+    <p id="5">mon résultat moyenne doublé= </p>
+    
+    <p id="6"> résultat de ma boucle</p>
+    
+
+<!--lien vers mon fichier JavaScript-->
+    <script type="text/JavaScript" src="./JS.js"> </script>
+</body>
+
+</html>

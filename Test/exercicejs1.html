@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>fonction Example</title>
+</head>
+
+<body>
+  <!--exercice 1 En utilisant deux boucles for, écrire un script qui produit le résultat ci-dessous, dans la page HTML.
+1
+22
+333
+4444
+55555-->
+  <div id="output"></div>
+  <script>
+    var outputDiv = document.getElementById("output");
+    var result = "";
+
+    for (var i = 1; i <= 5; i++) {
+      for (var j = 1; j <= i; j++) {
+        result += i;
+      }
+      result += "</br> ";
+    }
+    outputDiv.innerHTML = result;
+  </script>
+ <!--exercice 2 Déclarer une variable avec le nom de votre choix et avec la valeur 0. Tant que cette variable n'atteint pas 20, il faut :
+l'afficher dans la page HTML;
+incrémenter sa valeur de 2 ;--> 
+<script>
+ 
+</script>
+  
+  
+  <!--exercice 3 Créez une fonction qui prend un tableau de nombres et renvoie le minimum et le maximum dans un tableau [Min, Max].-->
+  <script>
+    function findMinMax(numbers) {
+      if (numbers.length === 0) {
+        return [];
+      }
+
+      var min = numbers[0];
+      var max = numbers[0];
+
+      for (var i = 1; i < numbers.length; i++) {
+        if (numbers[i] < min) {
+          min = numbers[i];
+        }
+        if (numbers[i] > max) {
+          max = numbers[i];
+        }
+      }
+
+      return [min, max];
+    }
+    var numbersArray = [5, 2, 9, 1, 7];
+    var minMaxArray = findMinMax(numbersArray);
+    console.log(minMaxArray);
+  </script></br>
+  <!--exercice 4 Créez une fonction qui prend un nombre (de 1 à 12) et renvoie son nom de mois correspondant
+  sous forme de chaîne. Par exemple, si on vous donne 4 en entrée, votre fonction devrait retourner Avril
+  , car Avril est le 4ème mois.-->
+<script>
+
+</script>
+
+  <!--execice 5 Le temps a un format: heures:minutes. Les heures et les minutes ont deux chiffres, comme 07:00.
+  Ecrivez l’expression régulière pour trouver le temps(heures:minutes) dans la chaîne.-->
+<script>
+function comp(chaine) {
+  const regex = /\b\d{2}h\d{2}\b/g;
+  const resultat = chaine.match(regex);
+  return resultat;
+}
+//Exemples
+const chaine1 = "Le restaurant ouvre à 08h00 situé au boulevard du 200h200";
+console.log(comp(chaine1));
+
+const chaine2 = "J'ai pris mon déjeuner à 10h30.";
+console.log(comp(chaine2)); 
+
+const chaine3 = "Je vais aller au cinéma demain à 18h00 du soir.";
+console.log(comp(chaine3)); 
+</script>
+  <!--exercice 6 Créez une fonction qui trouve tous les nombres pairs de 1 au nombre donné.-->
+  <script>
+    
+  </script>
+  <!--exercice 7 Function `calFahrenheit()` returns the converted Celsius value to Fahrenheit value based on the 
+  formula `(Celsius × 9/5) + 32 = Fahrenheit`-->
+
+  <script>
+    function calFahrenheit(celsius) {
+  var fahrenheit = (celsius * 9/5) + 32;
+  return fahrenheit;
+}
+
+// Example
+var celsiusValue = 25;
+var fahrenheitValue = calFahrenheit(celsiusValue);
+console.log(fahrenheitValue); 
+  </script>
+  <!--exercice 8 Écrivez un programme JavaScript pour calculer la multiplication et la division de deux nombres 
+    (saisie de l'utilisateur).-->
+
+
+<script>
+
+    
+</script>
+  <!--exercice 9 Écrivez une fonction JavaScript pour obtenir le dernier élément d'un tableau. Passer le paramètre « n » renverra
+   les « n » derniers éléments du tableau.
+Données de test :
+console.log(last([7, 9, 0, -2]));
+console.log(last([7, 9, 0, -2],3));
+console.log(last([7, 9, 0, -2],6));
+Résultat attendu :
+-2
+[9, 0, -2]
+[7, 9, 0, -2]-->
+
+<!--exercice 10 Écrivez un programme JavaScript simple pour joindre tous les éléments du tableau suivant dans une chaîne.
+Exemple de tableau : myColor = ["Red", "Green", "White", "Black"];
+Sortie attendue :
+"Rouge, Vert, Blanc, Noir"
+"Rouge, Vert, Blanc, Noir"
+"Rouge + Vert + Blanc + Noir"
+Écrivez une fonction JavaScript pour trouver la différence entre deux tableaux.
+Données de test :
+console.log(difference([1, 2, 3], [100, 2, 1, 10]));
+["3", "10", "100"]
+console.log(différence([1, 2, 3, 4, 5], [1, [2], [3, [[4]]],[5 ,6]]));
+["6"]
+console.log(différence([1, 2, 3], [100, 2, 1, 10]));
+["3", "10", "100"]-->
+<script>
+    
+</script>   
+
+
+
+</body>
+
+</html>
