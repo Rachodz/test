@@ -15,7 +15,7 @@
 
     <div class="container-fluid">
         <div id="formu">
-            <h2>LOGIN</h2>
+            <h2>LOGINN</h2>
             <h6><i>Se connecter</i></h6>
             <form method="POST" action='auth.php'>
                 <div><label for="email">email "Gmail.com":</label></br>
